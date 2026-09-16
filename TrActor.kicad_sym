@@ -2,6 +2,165 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
+	(symbol "ATX-13"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 2.032 -6.096 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ATX-13"
+			(at 4.318 -7.874 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+			(at -0.254 -20.574 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://abracon.com/datasheets/ATX-13.pdf"
+			(at -0.254 -23.114 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "ATX-13_1_1"
+			(rectangle
+				(start -3.81 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -3.81) (xy 2.54 -3.81) (xy 2.54 -2.54) (xy 3.81 -2.54) (xy 3.81 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 -7.62 90)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "DW3210"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -64,7 +223,7 @@
 		(symbol "DW3210_1_1"
 			(rectangle
 				(start -17.78 19.05)
-				(end 17.78 -32.385)
+				(end 17.78 -31.75)
 				(stroke
 					(width 0)
 					(type solid)
@@ -507,7 +666,7 @@
 				)
 			)
 			(pin power_in line
-				(at -2.54 -34.925 90)
+				(at -2.54 -34.29 90)
 				(length 2.54)
 				(name "VSS2"
 					(effects
@@ -525,7 +684,7 @@
 				)
 			)
 			(pin power_in line
-				(at 3.81 -34.925 90)
+				(at 3.81 -34.29 90)
 				(length 2.54)
 				(name "VSS3"
 					(effects
@@ -597,7 +756,7 @@
 				)
 			)
 			(pin power_in line
-				(at -8.89 -34.925 90)
+				(at -8.89 -34.29 90)
 				(length 2.54)
 				(name "VSS1"
 					(effects
@@ -759,7 +918,7 @@
 				)
 			)
 			(pin power_in line
-				(at 8.89 -34.925 90)
+				(at 8.89 -34.29 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -777,7 +936,7 @@
 				)
 			)
 			(pin power_in line
-				(at 8.89 -34.925 90)
+				(at 8.89 -34.29 90)
 				(length 2.54)
 				(hide yes)
 				(name "VSS"
@@ -793,6 +952,67 @@
 							(size 1.27 1.27)
 						)
 					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "nPM1300"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

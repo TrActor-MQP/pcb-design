@@ -547,6 +547,13 @@
         "via_diameter": 0.6858,
         "via_drill": 0.3302,
         "wire_width": 6
+      },
+      {
+        "name": "RF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(194, 0, 194)",
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -693,13 +700,25 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "U1-2",
+    "used_designators": "#FLG1-3,R1-6,J1-2,L1-5,D1-3,C1-31,FB1,Y1-2,#PWR1-40,Q1-3,U1-4",
     "variants": []
   },
   "sheets": [
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       "TrActor-Board"
+    ],
+    [
+      "ff5622cf-2494-466d-833d-52c7125d8470",
+      "UWB"
+    ],
+    [
+      "b0f0e725-d0ca-4c33-8219-af40b4b4e909",
+      "MCU"
+    ],
+    [
+      "e82fad38-4c10-4679-a703-07ea413d1661",
+      "Power Management"
     ]
   ],
   "text_variables": {},
