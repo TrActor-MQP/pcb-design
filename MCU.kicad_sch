@@ -2998,7 +2998,7 @@
 		)
 		(uuid "a17bc83e-3837-43ea-adc3-a34971d7cc0a")
 	)
-	(text "TO:DO:\n- Figure out RF Rules area for ERC/DRC\n- NFC\n- LED Component Selection"
+	(text "TO:DO:\n- Figure out RF Rules area for ERC/DRC\n- NFC\n- LED Component Selection\n- BLE antenna selection\n- Test pads"
 		(exclude_from_sim no)
 		(at 13.208 16.51 0)
 		(effects
@@ -3051,6 +3051,12 @@
 			(justify left)
 		)
 		(uuid "dac9c9c9-a389-4540-97cb-b64611e5dbb9")
+	)
+	(junction
+		(at 60.96 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0487d386-2006-485c-b281-c6497042bf3e")
 	)
 	(junction
 		(at 43.18 69.85)
@@ -3123,6 +3129,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b9b8fc3-f5f7-4460-8f1b-4c59932f7a8f")
+	)
+	(junction
+		(at 86.36 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c18ac61-1522-417c-8891-55aca5ae582d")
 	)
 	(junction
 		(at 144.78 31.75)
@@ -3970,6 +3982,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 24.13) (xy 86.36 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c0a906c-1eb1-489c-bacb-e75b363c10f4")
+	)
+	(wire
+		(pts
 			(xy 58.42 158.75) (xy 63.5 158.75)
 		)
 		(stroke
@@ -4070,7 +4092,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 50.8) (xy 63.5 49.53)
+			(xy 60.96 50.8) (xy 60.96 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4327,6 +4349,16 @@
 			(type default)
 		)
 		(uuid "cf295078-8dd2-4caf-aca7-03a47a6fea9e")
+	)
+	(wire
+		(pts
+			(xy 95.25 22.86) (xy 95.25 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfe4fc23-12f3-4991-8183-052f2a844271")
 	)
 	(wire
 		(pts
@@ -7077,7 +7109,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 50.8 0)
+		(at 60.96 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7088,7 +7120,7 @@
 		(fields_autoplaced yes)
 		(uuid "85957627-2dbd-4feb-81a7-247234ec54f6")
 		(property "Reference" "#PWR07"
-			(at 63.5 57.15 0)
+			(at 60.96 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7099,7 +7131,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 55.88 0)
+			(at 60.96 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7109,7 +7141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 50.8 0)
+			(at 60.96 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7120,7 +7152,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 50.8 0)
+			(at 60.96 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7131,7 +7163,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 50.8 0)
+			(at 60.96 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

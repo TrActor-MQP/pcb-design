@@ -294,7 +294,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "multiple_net_names|1168400|1295400|de765ccb-0a22-49fe-b7c3-9a263f50981f|6fa5123b-3399-4ccb-be96-7317df58f52b|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470",
+        ""
+      ],
+      [
+        "pin_to_pin|2565400|1104900|fef34371-8974-4896-a3da-3c5b1f0bcffc|5a70b55c-d280-49d0-96f6-4a9f26e851cf|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909",
+        "Two connectors for the same thing."
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -483,11 +492,11 @@
       "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
-      "isolated_pin_label": "warning",
+      "isolated_pin_label": "error",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -509,7 +518,7 @@
       "similar_labels": "warning",
       "similar_power": "warning",
       "simulation_model_issue": "error",
-      "single_global_label": "ignore",
+      "single_global_label": "error",
       "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
@@ -700,7 +709,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "#FLG1-3,R1-6,J1-2,L1-5,D1-3,C1-31,FB1,Y1-2,#PWR1-40,Q1-3,U1-4",
+    "used_designators": "JP1,Q1-3,F1,#PWR1-60,Y1-2,C1-39,U1-6,D1-6,FB1-2,L1-6,J1-4,R1-12,#FLG1-5,SW1",
     "variants": []
   },
   "sheets": [
