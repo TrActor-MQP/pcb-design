@@ -558,18 +558,57 @@
         "wire_width": 6
       },
       {
+        "line_style": 1,
         "name": "RF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgb(194, 0, 194)",
-        "tuning_profile": ""
+        "tuning_profile": "",
+        "wire_width": 10
       }
     ],
     "meta": {
       "version": 5
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/MCU/ANT": [
+        "RF"
+      ],
+      "/MCU/ANT_BLE": [
+        "RF"
+      ],
+      "/MCU/NFC1": [
+        "RF"
+      ],
+      "/MCU/NFC2": [
+        "RF"
+      ],
+      "/UWB/RF_UWB": [
+        "RF"
+      ],
+      "/UWB/RF_UWB_GND": [
+        "RF"
+      ],
+      "Net-(AE1-Pad1)": [
+        "RF"
+      ],
+      "Net-(AE1-Pad2)": [
+        "RF"
+      ],
+      "Net-(C18-Pad1)": [
+        "RF"
+      ],
+      "Net-(FB2-Pad1)": [
+        "RF"
+      ],
+      "Net-(U1-ANT)": [
+        "RF"
+      ],
+      "Net-(U2-RF2)": [
+        "RF"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -709,7 +748,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "JP1,Q1-3,F1,#PWR1-60,Y1-2,C1-39,U1-6,D1-6,FB1-2,L1-6,J1-4,R1-12,#FLG1-5,SW1",
+    "used_designators": "J1-4,R1-15,AE1,SW1-2,#FLG1-5,Y1-3,#PWR1-66,FB1-2,L1-6,C1-42,D1-7,U1-6,Q1-3,F1-2,TP1-29,JP1-2",
     "variants": []
   },
   "sheets": [
