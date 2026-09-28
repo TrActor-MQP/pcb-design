@@ -968,7 +968,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"
+		(symbol "Connector_Generic_MountingPin:Conn_01x02_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -979,7 +979,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -988,8 +988,8 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_MountingPin"
-				(at 1.27 -7.62 0)
+			(property "Value" "Conn_01x02_MountingPin"
+				(at 1.27 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1021,7 +1021,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1054,27 +1054,16 @@
 					)
 				)
 			)
-			(symbol "Conn_01x04_MountingPin_1_1"
+			(symbol "Conn_01x02_MountingPin_1_1"
 				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -1099,20 +1088,9 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -1.016 -7.112) (xy 1.016 -7.112)
+						(xy -1.016 -4.572) (xy 1.016 -4.572)
 					)
 					(stroke
 						(width 0.1524)
@@ -1123,7 +1101,7 @@
 					)
 				)
 				(text "Mounting"
-					(at 0 -6.731 0)
+					(at 0 -4.191 0)
 					(effects
 						(font
 							(size 0.381 0.381)
@@ -1131,7 +1109,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1149,7 +1127,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -1167,43 +1145,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
+					(at 0 -7.62 90)
 					(length 3.048)
 					(name "MountPin"
 						(effects
@@ -3521,7 +3463,7 @@
 	)
 	(rectangle
 		(start 162.56 54.61)
-		(end 196.85 80.01)
+		(end 196.85 90.17)
 		(stroke
 			(width 0)
 			(type default)
@@ -3589,7 +3531,7 @@
 		)
 		(uuid "8970af23-ac2b-441e-b6a9-a752dd25c7de")
 	)
-	(text "TO:DO:\n- power button footprint selection\n- reset button/jumper footprint selection\n- Battery connector footprint selection\n- TP Footprint Selection"
+	(text "TO:DO:\n- NTC connector footprint selection"
 		(exclude_from_sim no)
 		(at 17.78 15.748 0)
 		(effects
@@ -3677,10 +3619,10 @@
 		(uuid "70112054-f97c-4037-b000-12bbe31ea8b9")
 	)
 	(junction
-		(at 175.26 72.39)
+		(at 181.61 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7a4f1341-5923-4da9-ad86-50d0b4dfa597")
+		(uuid "8cd35848-675f-45ff-b34b-103b4054261e")
 	)
 	(junction
 		(at 185.42 31.75)
@@ -3695,16 +3637,10 @@
 		(uuid "a1440814-a8b1-43ce-a268-223c5c7d8dd3")
 	)
 	(junction
-		(at 191.77 64.77)
+		(at 175.26 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a96d404a-5c2d-4fb6-904e-3d1b6a6736b8")
-	)
-	(junction
-		(at 180.34 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad8a45ea-a37d-44bd-a841-2e8ec9687030")
+		(uuid "b7273b02-ba47-48ac-9719-a78b2f6e04c7")
 	)
 	(junction
 		(at 209.55 129.54)
@@ -3731,6 +3667,12 @@
 		(uuid "d910e917-d96a-4551-8b61-caaf0e28f4ac")
 	)
 	(junction
+		(at 191.77 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de02a57f-6ece-4039-9ae3-1c9cdda5b03d")
+	)
+	(junction
 		(at 231.14 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3741,12 +3683,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0e70511-e7de-4414-a084-a99c34790c32")
-	)
-	(junction
-		(at 173.99 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e95259cb-38ca-4e71-8498-1151e54bd0df")
 	)
 	(junction
 		(at 233.68 30.48)
@@ -3773,12 +3709,16 @@
 		(uuid "ff1abcf1-182e-48c8-bed2-e7cd8b796a03")
 	)
 	(no_connect
+		(at 167.64 86.36)
+		(uuid "38a3aaf7-8f11-475c-afca-7e3e88482bfa")
+	)
+	(no_connect
 		(at 226.06 110.49)
 		(uuid "69b304c7-f10e-418a-a8d2-570767719e6b")
 	)
 	(no_connect
-		(at 167.64 59.69)
-		(uuid "ebd2a2ea-4490-45b7-8341-b383913625a8")
+		(at 167.64 72.39)
+		(uuid "7c31ede7-1480-455a-91e7-e3bc769ec7f6")
 	)
 	(no_connect
 		(at 226.06 113.03)
@@ -3803,16 +3743,6 @@
 			(type default)
 		)
 		(uuid "019a456b-e093-493c-8ee6-c14f468ccc5d")
-	)
-	(wire
-		(pts
-			(xy 173.99 64.77) (xy 180.34 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02e3ce97-b206-4f2d-abcf-aadb5cdf4251")
 	)
 	(wire
 		(pts
@@ -3873,16 +3803,6 @@
 			(type default)
 		)
 		(uuid "0bbe7281-755e-40b5-b393-0a7b61e385a5")
-	)
-	(wire
-		(pts
-			(xy 175.26 67.31) (xy 172.72 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c7bf785-e37b-4216-a263-86652c018f76")
 	)
 	(wire
 		(pts
@@ -3956,13 +3876,23 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 64.77) (xy 173.99 64.77)
+			(xy 172.72 64.77) (xy 175.26 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1cd10a11-dd93-4f2c-a0c7-415089e44904")
+	)
+	(wire
+		(pts
+			(xy 175.26 67.31) (xy 172.72 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "235bd9ac-135f-4d3d-86ae-0e5e966d445e")
 	)
 	(wire
 		(pts
@@ -4036,7 +3966,17 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 73.66) (xy 175.26 72.39)
+			(xy 187.96 64.77) (xy 191.77 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dbb55c6-c78e-4f80-8253-3da6276f94cd")
+	)
+	(wire
+		(pts
+			(xy 175.26 82.55) (xy 175.26 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4216,16 +4156,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 72.39) (xy 175.26 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7914a292-1b61-4961-9283-0c1deadf3935")
-	)
-	(wire
-		(pts
 			(xy 219.71 121.92) (xy 219.71 123.19)
 		)
 		(stroke
@@ -4246,7 +4176,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 72.39) (xy 172.72 72.39)
+			(xy 175.26 81.28) (xy 172.72 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4286,6 +4216,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 68.58) (xy 175.26 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9499ea0d-5915-4fb6-a8f5-e2aa33a7b4b7")
+	)
+	(wire
+		(pts
 			(xy 228.6 82.55) (xy 231.14 82.55)
 		)
 		(stroke
@@ -4316,16 +4256,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 64.77) (xy 186.69 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1db6aa6-56eb-45b3-b202-d3b6b9e80916")
-	)
-	(wire
-		(pts
 			(xy 209.55 123.19) (xy 209.55 121.92)
 		)
 		(stroke
@@ -4346,7 +4276,17 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 69.85) (xy 176.53 69.85)
+			(xy 175.26 64.77) (xy 181.61 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab1b46c0-2997-47a6-a5e9-1a914646ddda")
+	)
+	(wire
+		(pts
+			(xy 172.72 78.74) (xy 176.53 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4513,6 +4453,16 @@
 			(type default)
 		)
 		(uuid "d48c66b8-daeb-47b9-ad30-c5bff64b0535")
+	)
+	(wire
+		(pts
+			(xy 181.61 64.77) (xy 182.88 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da496fb9-a59c-48ee-854f-ef8945e8fbd6")
 	)
 	(wire
 		(pts
@@ -4862,7 +4812,7 @@
 	)
 	(global_label "NTC"
 		(shape input)
-		(at 176.53 69.85 0)
+		(at 176.53 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4872,7 +4822,7 @@
 		)
 		(uuid "91022726-f3b2-4277-b1a4-d2372374b1ca")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.4291 69.85 0)
+			(at 182.4291 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4958,7 +4908,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint_Alt")
-		(at 180.34 64.77 0)
+		(at 181.61 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4968,7 +4918,7 @@
 		(dnp no)
 		(uuid "0c30da83-d6eb-4806-abc4-d1a966424f5b")
 		(property "Reference" "TP9"
-			(at 182.88 60.1979 0)
+			(at 184.15 60.1979 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4979,7 +4929,7 @@
 			)
 		)
 		(property "Value" "BATT"
-			(at 182.88 62.7379 0)
+			(at 184.15 62.7379 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4989,8 +4939,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 185.42 64.77 0)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 186.69 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5001,7 +4951,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 64.77 0)
+			(at 186.69 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5012,7 +4962,7 @@
 			)
 		)
 		(property "Description" "test point (alternative shape)"
-			(at 180.34 64.77 0)
+			(at 181.61 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5192,7 +5142,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 173.99 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -5427,7 +5377,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 255.27 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -5552,7 +5502,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 175.26 73.66 0)
+		(at 175.26 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5563,7 +5513,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e395b66-26ed-478b-aa91-01a3b689da20")
 		(property "Reference" "#PWR063"
-			(at 175.26 80.01 0)
+			(at 175.26 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5574,7 +5524,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 78.74 0)
+			(at 175.26 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5584,7 +5534,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 73.66 0)
+			(at 175.26 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5595,7 +5545,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 73.66 0)
+			(at 175.26 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5606,7 +5556,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 73.66 0)
+			(at 175.26 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5701,6 +5651,89 @@
 			(project "TrActor-Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 167.64 78.74 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5e250358-b607-492d-b2d6-f058effc6739")
+		(property "Reference" "J5"
+			(at 164.592 76.454 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NTC"
+			(at 164.592 78.994 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 167.64 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "MP"
+			(uuid "5fc87555-3487-48d3-9384-01d2e2e0bff7")
+		)
+		(pin "1"
+			(uuid "24f7b2ce-ea04-46ab-9da8-87111aba8304")
+		)
+		(pin "2"
+			(uuid "6b90fff6-8530-4017-be3a-c662d5be23f1")
+		)
+		(instances
+			(project "TrActor-Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -5918,7 +5951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 234.95 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -6071,7 +6104,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7A"
 			(at 180.34 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6199,7 +6232,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 173.99 64.77 0)
+		(at 175.26 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6209,7 +6242,7 @@
 		(dnp no)
 		(uuid "8093a8d5-ccb3-40b3-8eeb-213717b2acb1")
 		(property "Reference" "#FLG05"
-			(at 173.99 62.865 0)
+			(at 175.26 62.865 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6220,7 +6253,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 173.99 61.214 0)
+			(at 175.26 61.214 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6230,7 +6263,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 173.99 64.77 0)
+			(at 175.26 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6241,7 +6274,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 173.99 64.77 0)
+			(at 175.26 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6252,7 +6285,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 173.99 64.77 0)
+			(at 175.26 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6276,7 +6309,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse_Small")
-		(at 189.23 64.77 90)
+		(at 185.42 64.77 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -6287,7 +6320,7 @@
 		(dnp no)
 		(uuid "90e39781-0a88-4fad-9bd5-fd41a8244bfe")
 		(property "Reference" "F2"
-			(at 189.23 71.12 90)
+			(at 185.42 71.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6297,7 +6330,7 @@
 			)
 		)
 		(property "Value" "500mA 6V"
-			(at 189.23 68.58 90)
+			(at 185.42 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6307,7 +6340,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
-			(at 194.31 66.04 0)
+			(at 190.5 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6319,7 +6352,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 64.77 0)
+			(at 185.42 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6330,7 +6363,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
-			(at 189.23 64.77 0)
+			(at 185.42 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6550,7 +6583,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 193.04 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -6629,7 +6662,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 255.27 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -6707,7 +6740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 236.22 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6867,7 +6900,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_EVQP7A"
 			(at 161.29 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7543,7 +7576,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 234.95 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -7583,6 +7616,84 @@
 			(project "TrActor-Board"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "TP14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 175.26 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb64c8dc-ac6b-4db6-bcb4-0f6bc1fb3d0d")
+		(property "Reference" "#PWR067"
+			(at 175.26 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 175.26 73.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e22a8e96-745f-4b84-90b6-3b44b82e91d4")
+		)
+		(instances
+			(project "TrActor-Board"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -7698,7 +7809,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
 			(at 223.52 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -7900,8 +8011,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 167.64 69.85 180)
+		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
+		(at 167.64 64.77 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7909,10 +8021,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fbeb90a6-4c1c-43a6-93ea-eef391b9c4f0")
+		(uuid "f4fc800b-442c-4d08-8356-176ae0fce887")
 		(property "Reference" "J4"
-			(at 167.64 78.74 0)
+			(at 164.846 58.928 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7921,8 +8032,8 @@
 				)
 			)
 		)
-		(property "Value" "Battery"
-			(at 167.64 76.2 0)
+		(property "Value" "Batt"
+			(at 164.846 61.468 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7931,8 +8042,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 167.64 69.85 0)
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
+			(at 167.64 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7943,7 +8054,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 69.85 0)
+			(at 167.64 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7953,8 +8064,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 167.64 69.85 0)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 167.64 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7963,21 +8074,15 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "4"
-			(uuid "bb69f47c-8c1a-4781-836c-735039db6cc7")
-		)
-		(pin "1"
-			(uuid "5f35bf8f-eff9-4818-9f44-901b3a3d1856")
-		)
-		(pin "2"
-			(uuid "9a6ea4b9-8f07-4908-9e0b-748900e2fffb")
-		)
-		(pin "3"
-			(uuid "5af23175-6067-4183-bbb8-2ab7d644a81b")
 		)
 		(pin "MP"
-			(uuid "61c1dd18-f301-481e-9d1f-1a6d0c7f2fc8")
+			(uuid "331c5b2a-fb10-46e5-affa-dd4941e3eb95")
+		)
+		(pin "1"
+			(uuid "e270b7a0-2330-44d6-a476-3ea831773050")
+		)
+		(pin "2"
+			(uuid "d6ef96a1-a619-40ea-a275-c451cf1d4ac7")
 		)
 		(instances
 			(project "TrActor-Board"
