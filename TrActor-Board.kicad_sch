@@ -3607,7 +3607,7 @@
 		(uuid "4beb9285-bfea-4af0-bcba-e1ce61bd5908")
 	)
 	(junction
-		(at 252.73 82.55)
+		(at 259.08 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6dcf36e4-0072-4bbe-8781-c20f77423fed")
@@ -3617,6 +3617,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "70112054-f97c-4037-b000-12bbe31ea8b9")
+	)
+	(junction
+		(at 241.3 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8bfc0dbf-d085-4671-bff4-dbf496774a15")
 	)
 	(junction
 		(at 181.61 64.77)
@@ -3659,12 +3665,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2d12e19-8fb6-412b-aca9-9ceb26a07e32")
-	)
-	(junction
-		(at 241.3 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d910e917-d96a-4551-8b61-caaf0e28f4ac")
 	)
 	(junction
 		(at 191.77 64.77)
@@ -3906,7 +3906,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 82.55) (xy 248.92 82.55)
+			(xy 259.08 82.55) (xy 255.27 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3933,16 +3933,6 @@
 			(type default)
 		)
 		(uuid "2ab22e21-f94f-4a6f-acb1-c1ebc17f349f")
-	)
-	(wire
-		(pts
-			(xy 243.84 82.55) (xy 241.3 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "302f88e9-074c-4bf3-8934-b6209b39cbe4")
 	)
 	(wire
 		(pts
@@ -4286,6 +4276,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 82.55) (xy 250.19 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acdf7c1a-0168-4301-8717-a492185d74d8")
+	)
+	(wire
+		(pts
 			(xy 172.72 78.74) (xy 176.53 78.74)
 		)
 		(stroke
@@ -4406,7 +4406,7 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 80.01) (xy 252.73 82.55)
+			(xy 259.08 80.01) (xy 259.08 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4847,6 +4847,30 @@
 		(uuid "a69b7405-21a5-42b6-bb19-24f2fb7a27be")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 239.4581 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "V_PRE"
+		(shape input)
+		(at 243.84 82.55 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c3ddcef5-d8c0-47e7-9157-78519b02e23c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 243.84 74.4738 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5580,7 +5604,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 252.73 80.01 0)
+		(at 259.08 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5591,7 +5615,7 @@
 		(fields_autoplaced yes)
 		(uuid "528e1188-e066-4557-96fc-643c7b635f3e")
 		(property "Reference" "#PWR060"
-			(at 252.73 83.82 0)
+			(at 259.08 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5602,7 +5626,7 @@
 			)
 		)
 		(property "Value" "VUSB"
-			(at 252.73 74.93 0)
+			(at 259.08 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5612,7 +5636,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 80.01 0)
+			(at 259.08 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5623,7 +5647,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 80.01 0)
+			(at 259.08 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5634,7 +5658,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 252.73 80.01 0)
+			(at 259.08 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5688,7 +5712,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
 			(at 167.64 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -6470,7 +6494,7 @@
 	)
 	(symbol
 		(lib_id "Device:Polyfuse_Small")
-		(at 246.38 82.55 90)
+		(at 252.73 82.55 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6481,7 +6505,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d8c372f-5af9-48b6-b191-9c69d2f0592a")
 		(property "Reference" "F1"
-			(at 246.38 76.2 90)
+			(at 252.73 76.2 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6491,7 +6515,7 @@
 			)
 		)
 		(property "Value" "500mA 6V"
-			(at 246.38 78.74 90)
+			(at 252.73 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6501,7 +6525,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0603_1608Metric"
-			(at 251.46 81.28 0)
+			(at 257.81 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6513,7 +6537,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 82.55 0)
+			(at 252.73 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6524,7 +6548,7 @@
 			)
 		)
 		(property "Description" "Resettable fuse, polymeric positive temperature coefficient, small symbol"
-			(at 246.38 82.55 0)
+			(at 252.73 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7494,7 +7518,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left"
 			(at 189.23 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7856,7 +7880,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 252.73 82.55 0)
+		(at 259.08 82.55 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -7867,7 +7891,7 @@
 		(dnp no)
 		(uuid "ef7c76e9-b5b5-4619-b750-f6127b35f7fc")
 		(property "Reference" "#FLG02"
-			(at 252.73 84.455 0)
+			(at 259.08 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7878,7 +7902,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 252.73 86.106 0)
+			(at 259.08 86.106 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7888,7 +7912,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 252.73 82.55 0)
+			(at 259.08 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7899,7 +7923,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 252.73 82.55 0)
+			(at 259.08 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7910,7 +7934,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 252.73 82.55 0)
+			(at 259.08 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
