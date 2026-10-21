@@ -39,9 +39,9 @@
         "other_text_thickness": 0.1524,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.62,
+          "width": 0.56
         },
         "silk_line_width": 0.1524,
         "silk_text_italic": false,
@@ -61,7 +61,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.508,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -226,7 +226,8 @@
         0.35,
         0.4,
         0.45,
-        0.5
+        0.5,
+        0.75
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -262,6 +263,10 @@
         {
           "diameter": 0.45,
           "drill": 0.3
+        },
+        {
+          "diameter": 0.75,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
@@ -296,12 +301,32 @@
   "erc": {
     "erc_exclusions": [
       [
+        "multiple_net_names|1168400|1295400|ce4f60fc-f5e0-4c35-b383-cdd0af953860|70e39ef3-d81a-4c08-b171-3e0ce832fac9|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470",
+        ""
+      ],
+      [
         "multiple_net_names|1168400|1295400|de765ccb-0a22-49fe-b7c3-9a263f50981f|6fa5123b-3399-4ccb-be96-7317df58f52b|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470",
+        ""
+      ],
+      [
+        "pin_to_pin|1282700|1143000|b3895e54-6f6e-4e73-9115-afb68619f4ef|5ce0b5d2-7959-44f3-901d-16aa7fc334e0|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
+        ""
+      ],
+      [
+        "pin_to_pin|2527300|342900|42c7aa00-de38-4de5-909d-159ef421be79|dfd90d03-b903-40e9-a596-7f4c3f52c1b6|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909",
+        ""
+      ],
+      [
+        "pin_to_pin|2527300|368300|8ca994e7-ec21-48d5-9d05-a07ccd89ec2e|7f30e20d-4d83-4c3c-9bb6-331cefa9bd8b|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909",
         ""
       ],
       [
         "pin_to_pin|2565400|1104900|fef34371-8974-4896-a3da-3c5b1f0bcffc|5a70b55c-d280-49d0-96f6-4a9f26e851cf|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909",
         "Two connectors for the same thing."
+      ],
+      [
+        "pin_to_pin|2781300|368300|7f30e20d-4d83-4c3c-9bb6-331cefa9bd8b|ad32f501-1ba4-4b38-8e75-f862d9b317a5|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b0f0e725-d0ca-4c33-8219-af40b4b4e909",
+        ""
       ]
     ],
     "meta": {
@@ -609,7 +634,13 @@
       "Net-(AE2-FEED)": [
         "RF"
       ],
+      "Net-(AE3-PCB_Trace)": [
+        "RF"
+      ],
       "Net-(C18-Pad1)": [
+        "RF"
+      ],
+      "Net-(C40-Pad2)": [
         "RF"
       ],
       "Net-(FB2-Pad1)": [
@@ -767,7 +798,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "Q1-3,U1-7,D1-7,SW1-2,AE1-2,C1-45,F1-2,Y1-3,#PWR1-73,#FLG1-5,JP1-2,TP1-29,R1-17,FB1-2,L1-6,J1-5",
+    "used_designators": "F1-2,Q1-3,H1-3,#PWR1-75,Y1-3,Z2-3,J1-5,C1-45,D1-7,U1-7,JP1-2,R1-18,TP1-29,#FLG1-5,AE1-3,SW1-2,L1-6,FB1-2",
     "variants": []
   },
   "sheets": [
