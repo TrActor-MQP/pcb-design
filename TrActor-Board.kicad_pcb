@@ -13389,6 +13389,17 @@
 			(uuid "456df18a-ce98-4bfd-a00f-ea72d9226a71")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/TrActor.pretty/3dModel/AANI-CH-0029.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -35912,6 +35923,37 @@
 		)
 	)
 	(zone
+		(layer "F.Cu")
+		(uuid "b8fe40ed-2837-4d14-87be-9cfb2ba287e6")
+		(name "DW3000 Keepout Area 2")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "/")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy 145.237564 84.35) (xy 149.35 84.35) (xy 149.35 86.4) (xy 145.237564 86.4)
+			)
+		)
+	)
+	(zone
 		(net "/UWB/UWB_ANT")
 		(layer "F.Cu")
 		(hatch none 0.1)
@@ -35941,37 +35983,6 @@
 				(xy 144.058716 74.746539) (xy 144.052281 74.744216) (xy 143.15841 74.074483) (xy 143.071495 74.009362)
 				(xy 143.06693 74.00166) (xy 143.069149 73.992984) (xy 143.071496 73.990637) (xy 143.146834 73.93419)
 				(xy 144.052281 73.255782) (xy 144.060957 73.253564)
-			)
-		)
-	)
-	(zone
-		(layer "F.Cu")
-		(uuid "b8fe40ed-2837-4d14-87be-9cfb2ba287e6")
-		(name "DW3000 Keepout Area 2")
-		(hatch edge 0.5)
-		(connect_pads
-			(clearance 0)
-		)
-		(min_thickness 0.25)
-		(keepout
-			(tracks not_allowed)
-			(vias allowed)
-			(pads allowed)
-			(copperpour not_allowed)
-			(footprints allowed)
-		)
-		(placement
-			(enabled no)
-			(sheetname "/")
-		)
-		(fill
-			(thermal_gap 0.5)
-			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
-		)
-		(polygon
-			(pts
-				(xy 145.237564 84.35) (xy 149.35 84.35) (xy 149.35 86.4) (xy 145.237564 86.4)
 			)
 		)
 	)
