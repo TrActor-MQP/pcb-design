@@ -5742,7 +5742,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "3bb59f61-e5c6-4bc1-9cd3-f971adf45f8f")
 		(property "Reference" "SW2"
 			(at 186.69 39.3701 90)
