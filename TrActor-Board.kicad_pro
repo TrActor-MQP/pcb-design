@@ -43,11 +43,11 @@
           "height": 0.62,
           "width": 0.56
         },
-        "silk_line_width": 0.1524,
+        "silk_line_width": 0.15,
         "silk_text_italic": false,
-        "silk_text_size_h": 0.8128,
-        "silk_text_size_v": 0.8128,
-        "silk_text_thickness": 0.1524,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
@@ -61,10 +61,10 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "min_clearance": 0.3,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
-          "pad_connection": 1,
+          "min_thickness": 0.2,
+          "pad_connection": 2,
           "remove_islands": 0,
           "thermal_relief_gap": 0.5,
           "thermal_relief_spoke_width": 0.5
@@ -77,7 +77,56 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "diff_pair_gap_out_of_range|149250000|113941250|f917ee33-cf40-4379-b2d6-251b1fa7abe0|237805bc-515d-4f74-87a8-ec918eebdb78",
+          "Dude womp womp. Near the USB port is evil."
+        ],
+        [
+          "diff_pair_gap_out_of_range|150250000|113903188|28aa7c90-dd91-4c52-92bb-d5d0977d1eeb|d7b512fd-6291-4087-ae20-dc6f69c18610",
+          "Dude womp womp. Near the USB port is evil."
+        ],
+        [
+          "diff_pair_gap_out_of_range|150250000|113903188|a63ae8a6-6e97-4756-8045-534daac5e8e1|d7b512fd-6291-4087-ae20-dc6f69c18610",
+          "Dude womp womp. Near the USB port is evil."
+        ],
+        [
+          "diff_pair_gap_out_of_range|150250000|113903188|f917ee33-cf40-4379-b2d6-251b1fa7abe0|d7b512fd-6291-4087-ae20-dc6f69c18610",
+          "Dude womp womp. Near the USB port is evil."
+        ],
+        [
+          "diff_pair_gap_out_of_range|150753062|110332550|59465707-4fdf-489f-b442-9c5a2e05ca25|cbe8316c-4e09-4fcc-8cf9-5a38d0dd1ba7",
+          "Dude womp womp. Gotta break in/out of components."
+        ],
+        [
+          "diff_pair_gap_out_of_range|157645000|108050000|eff2ef7d-79ef-42bb-b436-46de3fb0b1d6|dd0502a8-e743-4ee6-86e6-96e440bb168b",
+          "Dude womp womp. Gotta break in/out of components."
+        ],
+        [
+          "diff_pair_gap_out_of_range|158621876|91250000|d561913f-2897-4651-8941-03df150206ad|9d95087a-9721-401d-aab3-a9d985cd6e17",
+          "Dude womp womp. You gotta extend it to get into the MCU."
+        ],
+        [
+          "footprint_type_mismatch|150000000|120000000|0f3c8c85-114a-4adc-a67f-bfad6bcf23b3|00000000-0000-0000-0000-000000000000",
+          "Ok? So?"
+        ],
+        [
+          "invalid_outline|145200000|117550000|32d9cbf5-2699-489a-a917-bf8aa040bb26|a491ea3e-8a34-49df-8a9c-3b2a9198d1a1",
+          "Seems to be fine?"
+        ],
+        [
+          "lib_footprint_mismatch|150242500|105306250|d4ec61ea-65c9-417e-862e-3e63303c40fb|00000000-0000-0000-0000-000000000000",
+          "Silkscreen Modification."
+        ],
+        [
+          "lib_footprint_mismatch|155875000|90037500|3cd718af-291c-48e8-9902-fcea91e89da2|00000000-0000-0000-0000-000000000000",
+          "Silkscreen Change"
+        ],
+        [
+          "track_width|150250000|113650000|bd2b0272-b042-4fd0-873d-1e3f77eb5bcb|00000000-0000-0000-0000-000000000000",
+          "It just refuses to accept properly taking this value, so womp womp."
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -114,18 +163,18 @@
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "error",
         "missing_footprint": "warning",
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "error",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "error",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "error",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -141,10 +190,10 @@
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
-        "tuning_profile_track_geometries": "ignore",
+        "tuning_profile_track_geometries": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "warning",
+        "via_dangling": "error",
         "zones_intersect": "error"
       },
       "rule_severitieslegacy_courtyards_overlap": true,
@@ -158,17 +207,17 @@
         "min_copper_edge_clearance": 0.2,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
-        "min_hole_to_hole": 0.25,
+        "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.75,
-        "min_text_thickness": 0.1,
-        "min_through_hole_diameter": 0.15,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.15,
+        "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1,
-        "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.25,
+        "min_via_annular_width": 0.05,
+        "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -261,8 +310,12 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.45,
+          "diameter": 0.4,
           "drill": 0.3
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
         },
         {
           "diameter": 0.75,
@@ -281,7 +334,28 @@
       "mpn": "",
       "sch_revision": "1"
     },
-    "layer_pairs": [],
+    "layer_pairs": [
+      {
+        "bottomLayer": 8,
+        "enabled": true,
+        "topLayer": 6
+      },
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 6,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 8
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },
@@ -301,11 +375,19 @@
   "erc": {
     "erc_exclusions": [
       [
+        "multiple_net_names|1168400|1295400|bf3e7f16-a7a9-4323-ad0d-9999502fe184|70e39ef3-d81a-4c08-b171-3e0ce832fac9|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470",
+        ""
+      ],
+      [
         "multiple_net_names|1168400|1295400|ce4f60fc-f5e0-4c35-b383-cdd0af953860|70e39ef3-d81a-4c08-b171-3e0ce832fac9|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470",
         ""
       ],
       [
         "multiple_net_names|1168400|1295400|de765ccb-0a22-49fe-b7c3-9a263f50981f|6fa5123b-3399-4ccb-be96-7317df58f52b|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470",
+        ""
+      ],
+      [
+        "multiple_net_names|1168400|1295400|ebde5aa9-5f07-41ab-a4e9-daef596fd6a6|70e39ef3-d81a-4c08-b171-3e0ce832fac9|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ff5622cf-2494-466d-833d-52c7125d8470",
         ""
       ],
       [
@@ -569,31 +651,53 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.127,
+        "clearance": 0.1,
         "diff_pair_gap": 0.254,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.1524,
         "line_style": 0,
-        "microvia_diameter": 0.6858,
-        "microvia_drill": 0.3302,
+        "microvia_diameter": 0.0,
+        "microvia_drill": 0.0,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.254,
+        "track_width": 0.5,
         "tuning_profile": "",
-        "via_diameter": 0.6858,
-        "via_drill": 0.3302,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
+        "clearance": 0.15,
+        "line_style": 0,
+        "name": "HighSpeed",
+        "pcb_color": "rgb(0, 0, 194)",
+        "priority": 0,
+        "schematic_color": "rgb(0, 0, 194)",
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
         "line_style": 1,
         "name": "RF",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgb(194, 0, 194)",
-        "tuning_profile": "",
+        "pcb_color": "rgb(255, 0, 255)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 0, 255)",
+        "tuning_profile": "RF",
         "wire_width": 10
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.1501,
+        "diff_pair_width": 0.1349,
+        "line_style": 2,
+        "name": "USB",
+        "pcb_color": "rgb(0, 194, 0)",
+        "priority": 1,
+        "schematic_color": "rgb(0, 194, 0)",
+        "track_width": 0.1349,
+        "tuning_profile": "USB"
       }
     ],
     "meta": {
@@ -601,10 +705,19 @@
     },
     "net_colors": null,
     "netclass_assignments": {
+      "/D+": [
+        "USB"
+      ],
+      "/D-": [
+        "USB"
+      ],
       "/MCU/ANT": [
         "RF"
       ],
       "/MCU/ANT_BLE": [
+        "RF"
+      ],
+      "/MCU/BLE_ANT": [
         "RF"
       ],
       "/MCU/NFC+": [
@@ -619,11 +732,38 @@
       "/MCU/NFC2": [
         "RF"
       ],
+      "/MCU/RF_BLE": [
+        "RF"
+      ],
+      "/USB_D+": [
+        "USB"
+      ],
+      "/USB_D-": [
+        "USB"
+      ],
       "/UWB/RF_UWB": [
+        "RF"
+      ],
+      "/UWB/RF_UWB_AC": [
         "RF"
       ],
       "/UWB/RF_UWB_GND": [
         "RF"
+      ],
+      "/UWB/UWB_ANT": [
+        "RF"
+      ],
+      "CS_DW": [
+        "HighSpeed"
+      ],
+      "CS_IMU": [
+        "HighSpeed"
+      ],
+      "MISO": [
+        "HighSpeed"
+      ],
+      "MOSI": [
+        "HighSpeed"
       ],
       "Net-(AE1-Pad1)": [
         "RF"
@@ -646,11 +786,38 @@
       "Net-(FB2-Pad1)": [
         "RF"
       ],
+      "Net-(J3-D+-PadA6)": [
+        "USB"
+      ],
+      "Net-(J3-D--PadA7)": [
+        "USB"
+      ],
+      "Net-(R11-Pad2)": [
+        "USB"
+      ],
+      "Net-(R12-Pad1)": [
+        "USB"
+      ],
       "Net-(U1-ANT)": [
         "RF"
       ],
       "Net-(U2-RF2)": [
         "RF"
+      ],
+      "SCK": [
+        "HighSpeed"
+      ],
+      "SCL": [
+        "HighSpeed"
+      ],
+      "SDA": [
+        "HighSpeed"
+      ],
+      "USB+": [
+        "USB"
+      ],
+      "USB-": [
+        "USB"
       ],
       "unconnected-(AE2-NC-Pad1)": [
         "RF"
@@ -798,7 +965,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "F1-2,Q1-3,H1-3,#PWR1-75,Y1-3,Z2-3,J1-5,C1-45,D1-7,U1-7,JP1-2,R1-18,TP1-29,#FLG1-5,AE1-3,SW1-2,L1-6,FB1-2",
+    "used_designators": "JP1-2,#PWR1-76,Y1-3,FB1-2,L1-6,C1-45,Q1-3,F1-2,D1-7,U1-7,TP1-29,R1-18,AE1-3,SW1-2,#FLG1-5,H1-3,Z2-3,J1-5",
     "variants": []
   },
   "sheets": [
@@ -824,6 +991,59 @@
     "meta": {
       "version": 0
     },
-    "tuning_profiles_impedance_geometric": []
+    "tuning_profiles_impedance_geometric": [
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5584300,
+            "diff_pair_gap": 0,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 142000
+          },
+          {
+            "bottom_reference_layer": "UNDEFINED",
+            "delay": 5584300,
+            "diff_pair_gap": 0,
+            "signal_layer": "B.Cu",
+            "top_reference_layer": "In4.Cu",
+            "width": 149400
+          }
+        ],
+        "profile_name": "RF",
+        "target_impedance": 50.0,
+        "type": 0,
+        "via_overrides": [],
+        "via_prop_delay": 0
+      },
+      {
+        "enable_time_domain_tuning": true,
+        "layer_entries": [
+          {
+            "bottom_reference_layer": "In1.Cu",
+            "delay": 5785100,
+            "diff_pair_gap": 150100,
+            "signal_layer": "F.Cu",
+            "top_reference_layer": "UNDEFINED",
+            "width": 134900
+          },
+          {
+            "bottom_reference_layer": "UNDEFINED",
+            "delay": 5771800,
+            "diff_pair_gap": 150100,
+            "signal_layer": "B.Cu",
+            "top_reference_layer": "In4.Cu",
+            "width": 196667
+          }
+        ],
+        "profile_name": "USB",
+        "target_impedance": 90.0,
+        "type": 1,
+        "via_overrides": [],
+        "via_prop_delay": 0
+      }
+    ]
   }
 }

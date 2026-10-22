@@ -3558,6 +3558,12 @@
 		(uuid "76fb8fb8-6f97-41c5-a543-cfb7bf31402e")
 	)
 	(junction
+		(at 119.38 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ef88af9-0a42-4620-8577-045fbfc83c46")
+	)
+	(junction
 		(at 83.82 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3588,6 +3594,12 @@
 		(uuid "941416bc-b461-43da-9d2a-924066add37d")
 	)
 	(junction
+		(at 128.27 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96607c8a-c5b5-4515-8b08-dc1b201c2934")
+	)
+	(junction
 		(at 242.57 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3610,12 +3622,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c509d279-1337-47d7-8661-6e3d3cdfd3da")
-	)
-	(junction
-		(at 119.38 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c7693f66-4533-4ffd-bf3a-9082538dce0d")
 	)
 	(junction
 		(at 251.46 73.66)
@@ -3658,12 +3664,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea0e622f-d232-41ce-8f5d-2452ead18ee8")
-	)
-	(junction
-		(at 128.27 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb033d4f-3e12-42fc-9187-db6a67d6730b")
 	)
 	(junction
 		(at 140.97 109.22)
@@ -4145,7 +4145,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 58.42) (xy 137.16 58.42)
+			(xy 115.57 58.42) (xy 119.38 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4355,6 +4355,26 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 58.42) (xy 137.16 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c5202e4-5c8d-474a-bf59-3b5cce64b7f6")
+	)
+	(wire
+		(pts
+			(xy 119.38 57.15) (xy 119.38 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d743231-f0f3-4921-af18-4d64a4c79ffd")
+	)
+	(wire
+		(pts
 			(xy 273.05 48.26) (xy 273.05 49.53)
 		)
 		(stroke
@@ -4391,7 +4411,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "79e78dc9-6d1d-4057-b29f-28f568315691")
+		(uuid "79e78dc9-6d1d-4057-b29f-28f568315692")
 	)
 	(wire
 		(pts
@@ -4545,6 +4565,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 58.42) (xy 128.27 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9093899e-f57d-4b7a-80bf-507b924906d3")
+	)
+	(wire
+		(pts
 			(xy 242.57 30.48) (xy 242.57 34.29)
 		)
 		(stroke
@@ -4632,16 +4662,6 @@
 			(type default)
 		)
 		(uuid "a98f1dba-9eda-4b71-b70a-cb8739b54fe6")
-	)
-	(wire
-		(pts
-			(xy 128.27 57.15) (xy 128.27 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9aefe32-20b4-4520-be5b-98da39e5f56d")
 	)
 	(wire
 		(pts
@@ -4785,16 +4805,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 57.15) (xy 119.38 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c33591f3-3a10-4872-812e-c21815581225")
-	)
-	(wire
-		(pts
 			(xy 116.84 132.08) (xy 111.76 132.08)
 		)
 		(stroke
@@ -4802,6 +4812,16 @@
 			(type default)
 		)
 		(uuid "c5954ed8-6472-48e2-bdf5-5ec7ad8d1db7")
+	)
+	(wire
+		(pts
+			(xy 128.27 57.15) (xy 128.27 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5a00d87-276b-438a-8618-cdfa45524d66")
 	)
 	(wire
 		(pts
@@ -5163,6 +5183,16 @@
 		)
 		(uuid "05ccd583-eea2-4979-bde8-99b142c0421b")
 	)
+	(label "UWB_ANT"
+		(at 256.54 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14b616a0-e332-4971-b271-e0364e7318a2")
+	)
 	(label "SYNC"
 		(at 228.6 29.21 270)
 		(effects
@@ -5232,6 +5262,16 @@
 			(justify left bottom)
 		)
 		(uuid "d4b77e3f-6087-4445-a752-ddad262bdcc6")
+	)
+	(label "RF_UWB_AC"
+		(at 236.22 113.03 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db863847-9a41-4faf-99ab-b97ca1ef5deb")
 	)
 	(label "CLK_38.4M"
 		(at 270.51 82.55 0)
@@ -5477,14 +5517,14 @@
 		)
 		(uuid "5d2ad59c-f656-4355-9e05-c8aea11d1fc4")
 		(property "Netclass" "RF"
-			(at 280.0604 102.87 0)
+			(at 281.2796 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Component Class" ""
@@ -6058,7 +6098,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
+		(property "Footprint" "TrActor:ACR0301U"
 			(at 274.955 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -6069,7 +6109,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://abracon.com/datasheets/ACR0301U.pdf"
 			(at 274.955 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -8431,7 +8471,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "22u"
 			(at 158.75 71.8438 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8442,7 +8482,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
 			(at 156.21 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -9943,7 +9983,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47u"
+		(property "Value" "22u"
 			(at 139.7 55.3338 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9954,7 +9994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.8"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
 			(at 137.16 54.61 0)
 			(hide yes)
 			(show_name no)
