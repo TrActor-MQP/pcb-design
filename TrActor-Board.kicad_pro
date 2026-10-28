@@ -83,12 +83,12 @@
           "Dude womp womp. Near the USB port is evil."
         ],
         [
-          "diff_pair_gap_out_of_range|150250000|113903188|28aa7c90-dd91-4c52-92bb-d5d0977d1eeb|d7b512fd-6291-4087-ae20-dc6f69c18610",
-          "Dude womp womp. Near the USB port is evil."
+          "diff_pair_gap_out_of_range|150250000|113903188|67bdd0c8-fafd-48aa-9291-560a3d4e9eac|d7b512fd-6291-4087-ae20-dc6f69c18610",
+          "Evil USB Connector Mess. Part 2!"
         ],
         [
-          "diff_pair_gap_out_of_range|150250000|113903188|a63ae8a6-6e97-4756-8045-534daac5e8e1|d7b512fd-6291-4087-ae20-dc6f69c18610",
-          "Dude womp womp. Near the USB port is evil."
+          "diff_pair_gap_out_of_range|150250000|113903188|df0ac7bc-f3c3-4289-81b5-60fda15ba1ea|d7b512fd-6291-4087-ae20-dc6f69c18610",
+          "Evil USB Connector Mess. Part 2!"
         ],
         [
           "diff_pair_gap_out_of_range|150250000|113903188|f917ee33-cf40-4379-b2d6-251b1fa7abe0|d7b512fd-6291-4087-ae20-dc6f69c18610",
@@ -97,14 +97,6 @@
         [
           "diff_pair_gap_out_of_range|150753062|110332550|59465707-4fdf-489f-b442-9c5a2e05ca25|cbe8316c-4e09-4fcc-8cf9-5a38d0dd1ba7",
           "Dude womp womp. Gotta break in/out of components."
-        ],
-        [
-          "diff_pair_gap_out_of_range|157645000|108050000|eff2ef7d-79ef-42bb-b436-46de3fb0b1d6|dd0502a8-e743-4ee6-86e6-96e440bb168b",
-          "Dude womp womp. Gotta break in/out of components."
-        ],
-        [
-          "diff_pair_gap_out_of_range|158621876|91250000|d561913f-2897-4651-8941-03df150206ad|9d95087a-9721-401d-aab3-a9d985cd6e17",
-          "Dude womp womp. You gotta extend it to get into the MCU."
         ],
         [
           "footprint_type_mismatch|150000000|120000000|0f3c8c85-114a-4adc-a67f-bfad6bcf23b3|00000000-0000-0000-0000-000000000000",
@@ -197,7 +189,7 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
-        "track_not_centered_on_via": "ignore",
+        "track_not_centered_on_via": "warning",
         "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
@@ -228,8 +220,8 @@
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1,
-        "min_via_annular_width": 0.05,
-        "min_via_diameter": 0.4,
+        "min_via_annular_width": 0.075,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
@@ -322,12 +314,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.4,
-          "drill": 0.3
-        },
-        {
           "diameter": 0.45,
-          "drill": 0.2
+          "drill": 0.3
         },
         {
           "diameter": 0.75,
@@ -995,7 +983,7 @@
         "uuid": "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
       }
     ],
-    "used_designators": "J1-5,R1-18,JP1-2,TP1-29,H1-3,#PWR1-76,Y1-3,FB1-2,L1-6,Z2-3,Q1-3,F1-2,U1-8,D1-7,C1-46,#FLG1-5,AE1-3,SW1-2",
+    "used_designators": "TP1-29,JP1-2,R1-18,Z2-3,J1-5,Y1-3,#PWR1-76,FB1-2,L1-6,H1-3,F1-2,Q1-3,U1-8,D1-7,C1-46,AE1-3,SW1-2,#FLG1-5",
     "variants": []
   },
   "sheets": [

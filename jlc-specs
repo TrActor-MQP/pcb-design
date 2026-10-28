@@ -1,0 +1,73 @@
+Base Material: FR4
+Layers: 6 (should be auto-set)
+Dimensions: 26 x 50mm (should be auto-set)
+PCB Qty: 10
+Product Type: Industrial/Consumer electronics
+
+
+    PCB Specifications:
+Deburring/Edge Rounding: Yes
+Different Design: 1
+Delivery Format: Single PCB
+PCB Thickness: 1.6mm
+PCB Color: Green
+Silkscreen: White
+Material Type: FR4 TG135
+Surface Finish: ENIG
+Gold Thickness: 1 U"
+
+    High-spec Options:
+Outer Copper Weight: 1 oz
+Inner Copper Weight: 0.5 oz
+Specify Layer Sequence: No
+Specify Stackup: Yes
+    JLC06161H-3313
+    Will ask about thickness tolerance, click Yes
+Impedance Control: No requirement
+Via Covering: Epoxy Filled and Capped (should be auto-set)
+Min Via Hole Size/Diameter: 0.3mm/(0.4/0.45mm)
+Board Outline Tolerance: +-0.2mm(Regular)
+Confirm Production File: No
+Mark on PCB: 2D barcode (Serial Number)
+    Printing: Number Only
+    Prefix: TrActor
+    Unique Number: Remove
+    Incrementing Number: Starting Value:0001
+    2D Barcode Position: Specify Position
+Electrical Test: Flying Probe Fully Test (should be auto-set)
+Gold Fingers: No
+Castellated Holes: No
+Press-Fit Hole: No
+Edge Plating: No
+Blind Slots: No
+UL Marking: No
+Backdrill: No
+Humidity Indicator Card: No
+
+    Advanced Options
+4-Wire Kelvin Test: No
+Paper between PCBs: No
+Apperance Quality: IPC Class 2 Standard
+Silkscreen Technology: Ink-jet Printing Silkscreen
+Package Box: With JLCPCB Logo
+Inspection Report: No
+PCB Remark: Empty
+
+Stencil: Yes
+Framework: No
+step Stencil: No
+Nano-Coating: Yes
+Stencil Side: Top only
+Dimensions: Custom Size
+    x = 40mm
+    y = 80mm
+Stencil Qty: 1
+Thickness: Select by JLCPCB
+Stencil Process Type: Solder paste stencil
+Polishing Process: Electropolishing
+Fiducials: No Fiducial
+Confirm Production File: No
+Engrave Text: No
+Stencil Aperture Openings: Follow JLCPCB's Standard
+Package Box: With JLCPCB logo
+Stencil Remark: Empty
